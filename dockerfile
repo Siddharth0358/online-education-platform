@@ -1,6 +1,7 @@
 FROM nginx:alpine
-COPY . /usr/local/apache2/htdocs/
-
+COPY . /usr/share/nginx/html/
 EXPOSE 8000
+RUN nginx -g 'daemon off;'
+
 
 
