@@ -9,7 +9,7 @@ COPY nginx.conf /etc/nginx/conf.d/
 
 # Copy your website files to the default Nginx web root
 COPY . /usr/share/nginx/html
-
+RUN ls /usr/share/nginx/html
 # Expose port 80 for the web server
 EXPOSE 80
 
